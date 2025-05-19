@@ -5,10 +5,9 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  path: ./apps/nginx
+  path: ./clusters/flux-cluster/nginx
   prune: true
   sourceRef:
     kind: GitRepository
     name: home-lab
     namespace: flux-system
-  targetNamespace: default
