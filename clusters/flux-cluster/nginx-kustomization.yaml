@@ -1,13 +1,13 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: nginx
+  name: nginx-demo
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 5m0s
   path: ./clusters/flux-cluster/nginx
   prune: true
   sourceRef:
     kind: GitRepository
-    name: home-lab
-    namespace: flux-system
+    name: flux-system
+  validation: client

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: default
+  namespace: nginx-demo
 spec:
   replicas: 1
   selector:
@@ -14,8 +14,7 @@ spec:
         app: nginx
     spec:
       containers:
-        - name: nginx
-          image: nginx:stable
-          ports:
-            - containerPort: 80
-
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
