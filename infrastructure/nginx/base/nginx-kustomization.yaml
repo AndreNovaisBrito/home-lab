@@ -5,3 +5,4 @@ metadata:
 resources:
   - nginx-deployment.yaml
   - nginx-service.yaml
+  # - nginx-ingress.yaml
