@@ -1,3 +1,0 @@
-resources:
-  - ./podinfo-kustomization.yaml 
-  - ./podinfo-source.yaml
